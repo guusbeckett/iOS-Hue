@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1442F5B81BD79C8900E13BE3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442F5B71BD79C8900E13BE3 /* TableViewController.swift */; };
+		1442F5BA1BD7AE8400E13BE3 /* HueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442F5B91BD7AE8400E13BE3 /* HueTableViewCell.swift */; };
+		1459A0501BD916EF007AB3E1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1459A04F1BD916EF007AB3E1 /* Settings.bundle */; };
+		14B804821BD7983D00C32C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804811BD7983D00C32C58 /* AppDelegate.swift */; };
+		14B804871BD7983D00C32C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B804851BD7983D00C32C58 /* Main.storyboard */; };
+		14B8048A1BD7983E00C32C58 /* iOS_Hue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14B804881BD7983D00C32C58 /* iOS_Hue.xcdatamodeld */; };
+		14B8048C1BD7983E00C32C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B8048B1BD7983E00C32C58 /* Assets.xcassets */; };
+		14B8048F1BD7983E00C32C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B8048D1BD7983E00C32C58 /* LaunchScreen.storyboard */; };
+		14B8049A1BD7983E00C32C58 /* iOS_HueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804991BD7983E00C32C58 /* iOS_HueTests.swift */; };
+		14B804A51BD7983E00C32C58 /* iOS_HueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804A41BD7983E00C32C58 /* iOS_HueUITests.swift */; };
+		14B804B31BD799A800C32C58 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804B21BD799A800C32C58 /* DetailViewController.swift */; };
+		14B804B81BD799E000C32C58 /* BridgeMiddleman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804B61BD799E000C32C58 /* BridgeMiddleman.swift */; };
+		14B804B91BD799E000C32C58 /* HueLamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B804B71BD799E000C32C58 /* HueLamp.swift */; };
+		35DA3E33360331FE2433476C /* Pods_iOS_Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FB444D87802C2643AD905F /* Pods_iOS_Hue.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14B804961BD7983E00C32C58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B804761BD7983D00C32C58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B8047D1BD7983D00C32C58;
+			remoteInfo = "iOS-Hue";
+		};
+		14B804A11BD7983E00C32C58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B804761BD7983D00C32C58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B8047D1BD7983D00C32C58;
+			remoteInfo = "iOS-Hue";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06FB444D87802C2643AD905F /* Pods_iOS_Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1442F5B71BD79C8900E13BE3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1442F5B91BD7AE8400E13BE3 /* HueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueTableViewCell.swift; sourceTree = "<group>"; };
+		1459A04F1BD916EF007AB3E1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		14B8047E1BD7983D00C32C58 /* iOS-Hue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Hue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B804811BD7983D00C32C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14B804861BD7983D00C32C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14B804891BD7983D00C32C58 /* iOS_Hue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Hue.xcdatamodel; sourceTree = "<group>"; };
+		14B8048B1BD7983E00C32C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14B8048E1BD7983E00C32C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14B804901BD7983E00C32C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B804951BD7983E00C32C58 /* iOS-HueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-HueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B804991BD7983E00C32C58 /* iOS_HueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_HueTests.swift; sourceTree = "<group>"; };
+		14B8049B1BD7983E00C32C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B804A01BD7983E00C32C58 /* iOS-HueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-HueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B804A41BD7983E00C32C58 /* iOS_HueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_HueUITests.swift; sourceTree = "<group>"; };
+		14B804A61BD7983E00C32C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B804B21BD799A800C32C58 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		14B804B61BD799E000C32C58 /* BridgeMiddleman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeMiddleman.swift; sourceTree = "<group>"; };
+		14B804B71BD799E000C32C58 /* HueLamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueLamp.swift; sourceTree = "<group>"; };
+		5B50C7529C181E1EB70F84F6 /* Pods-iOS-Hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Hue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Hue/Pods-iOS-Hue.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E2A6C59E60199B16BB6E48 /* Pods-iOS-Hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Hue.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Hue/Pods-iOS-Hue.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B8047B1BD7983D00C32C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DA3E33360331FE2433476C /* Pods_iOS_Hue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B804921BD7983E00C32C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B8049D1BD7983E00C32C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B804751BD7983D00C32C58 = {
+			isa = PBXGroup;
+			children = (
+				14B804801BD7983D00C32C58 /* iOS-Hue */,
+				14B804981BD7983E00C32C58 /* iOS-HueTests */,
+				14B804A31BD7983E00C32C58 /* iOS-HueUITests */,
+				14B8047F1BD7983D00C32C58 /* Products */,
+				A3C116C2B8B0377AC301AEA3 /* Pods */,
+				830B0BEC98A914B40F0C7767 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14B8047F1BD7983D00C32C58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B8047E1BD7983D00C32C58 /* iOS-Hue.app */,
+				14B804951BD7983E00C32C58 /* iOS-HueTests.xctest */,
+				14B804A01BD7983E00C32C58 /* iOS-HueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B804801BD7983D00C32C58 /* iOS-Hue */ = {
+			isa = PBXGroup;
+			children = (
+				14B804811BD7983D00C32C58 /* AppDelegate.swift */,
+				1442F5B71BD79C8900E13BE3 /* TableViewController.swift */,
+				14B804B21BD799A800C32C58 /* DetailViewController.swift */,
+				1442F5B91BD7AE8400E13BE3 /* HueTableViewCell.swift */,
+				14B804851BD7983D00C32C58 /* Main.storyboard */,
+				14B8048B1BD7983E00C32C58 /* Assets.xcassets */,
+				14B8048D1BD7983E00C32C58 /* LaunchScreen.storyboard */,
+				14B804901BD7983E00C32C58 /* Info.plist */,
+				14B804881BD7983D00C32C58 /* iOS_Hue.xcdatamodeld */,
+				14B804B61BD799E000C32C58 /* BridgeMiddleman.swift */,
+				14B804B71BD799E000C32C58 /* HueLamp.swift */,
+				1459A04F1BD916EF007AB3E1 /* Settings.bundle */,
+			);
+			path = "iOS-Hue";
+			sourceTree = "<group>";
+		};
+		14B804981BD7983E00C32C58 /* iOS-HueTests */ = {
+			isa = PBXGroup;
+			children = (
+				14B804991BD7983E00C32C58 /* iOS_HueTests.swift */,
+				14B8049B1BD7983E00C32C58 /* Info.plist */,
+			);
+			path = "iOS-HueTests";
+			sourceTree = "<group>";
+		};
+		14B804A31BD7983E00C32C58 /* iOS-HueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14B804A41BD7983E00C32C58 /* iOS_HueUITests.swift */,
+				14B804A61BD7983E00C32C58 /* Info.plist */,
+			);
+			path = "iOS-HueUITests";
+			sourceTree = "<group>";
+		};
+		830B0BEC98A914B40F0C7767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06FB444D87802C2643AD905F /* Pods_iOS_Hue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3C116C2B8B0377AC301AEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B50C7529C181E1EB70F84F6 /* Pods-iOS-Hue.debug.xcconfig */,
+				A9E2A6C59E60199B16BB6E48 /* Pods-iOS-Hue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B8047D1BD7983D00C32C58 /* iOS-Hue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B804A91BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-Hue" */;
+			buildPhases = (
+				980219CA4B25BF25A100CF5D /* Check Pods Manifest.lock */,
+				14B8047A1BD7983D00C32C58 /* Sources */,
+				14B8047B1BD7983D00C32C58 /* Frameworks */,
+				14B8047C1BD7983D00C32C58 /* Resources */,
+				EDAD2574BE185CA47F74751E /* Embed Pods Frameworks */,
+				66E81E97C8C519DA09A99549 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Hue";
+			productName = "iOS-Hue";
+			productReference = 14B8047E1BD7983D00C32C58 /* iOS-Hue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14B804941BD7983E00C32C58 /* iOS-HueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B804AC1BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-HueTests" */;
+			buildPhases = (
+				14B804911BD7983E00C32C58 /* Sources */,
+				14B804921BD7983E00C32C58 /* Frameworks */,
+				14B804931BD7983E00C32C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B804971BD7983E00C32C58 /* PBXTargetDependency */,
+			);
+			name = "iOS-HueTests";
+			productName = "iOS-HueTests";
+			productReference = 14B804951BD7983E00C32C58 /* iOS-HueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14B8049F1BD7983E00C32C58 /* iOS-HueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B804AF1BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-HueUITests" */;
+			buildPhases = (
+				14B8049C1BD7983E00C32C58 /* Sources */,
+				14B8049D1BD7983E00C32C58 /* Frameworks */,
+				14B8049E1BD7983E00C32C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B804A21BD7983E00C32C58 /* PBXTargetDependency */,
+			);
+			name = "iOS-HueUITests";
+			productName = "iOS-HueUITests";
+			productReference = 14B804A01BD7983E00C32C58 /* iOS-HueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B804761BD7983D00C32C58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Reupload;
+				TargetAttributes = {
+					14B8047D1BD7983D00C32C58 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = ZP2LFA84SP;
+					};
+					14B804941BD7983E00C32C58 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = ZP2LFA84SP;
+						TestTargetID = 14B8047D1BD7983D00C32C58;
+					};
+					14B8049F1BD7983E00C32C58 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = ZP2LFA84SP;
+						TestTargetID = 14B8047D1BD7983D00C32C58;
+					};
+				};
+			};
+			buildConfigurationList = 14B804791BD7983D00C32C58 /* Build configuration list for PBXProject "iOS-Hue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B804751BD7983D00C32C58;
+			productRefGroup = 14B8047F1BD7983D00C32C58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B8047D1BD7983D00C32C58 /* iOS-Hue */,
+				14B804941BD7983E00C32C58 /* iOS-HueTests */,
+				14B8049F1BD7983E00C32C58 /* iOS-HueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B8047C1BD7983D00C32C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1459A0501BD916EF007AB3E1 /* Settings.bundle in Resources */,
+				14B8048F1BD7983E00C32C58 /* LaunchScreen.storyboard in Resources */,
+				14B8048C1BD7983E00C32C58 /* Assets.xcassets in Resources */,
+				14B804871BD7983D00C32C58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B804931BD7983E00C32C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B8049E1BD7983E00C32C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66E81E97C8C519DA09A99549 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Hue/Pods-iOS-Hue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980219CA4B25BF25A100CF5D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDAD2574BE185CA47F74751E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Hue/Pods-iOS-Hue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B8047A1BD7983D00C32C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B804B81BD799E000C32C58 /* BridgeMiddleman.swift in Sources */,
+				14B8048A1BD7983E00C32C58 /* iOS_Hue.xcdatamodeld in Sources */,
+				1442F5B81BD79C8900E13BE3 /* TableViewController.swift in Sources */,
+				14B804821BD7983D00C32C58 /* AppDelegate.swift in Sources */,
+				14B804B31BD799A800C32C58 /* DetailViewController.swift in Sources */,
+				14B804B91BD799E000C32C58 /* HueLamp.swift in Sources */,
+				1442F5BA1BD7AE8400E13BE3 /* HueTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B804911BD7983E00C32C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B8049A1BD7983E00C32C58 /* iOS_HueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B8049C1BD7983E00C32C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B804A51BD7983E00C32C58 /* iOS_HueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B804971BD7983E00C32C58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B8047D1BD7983D00C32C58 /* iOS-Hue */;
+			targetProxy = 14B804961BD7983E00C32C58 /* PBXContainerItemProxy */;
+		};
+		14B804A21BD7983E00C32C58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B8047D1BD7983D00C32C58 /* iOS-Hue */;
+			targetProxy = 14B804A11BD7983E00C32C58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14B804851BD7983D00C32C58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B804861BD7983D00C32C58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14B8048D1BD7983E00C32C58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B8048E1BD7983E00C32C58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B804A71BD7983E00C32C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14B804A81BD7983E00C32C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14B804AA1BD7983E00C32C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B50C7529C181E1EB70F84F6 /* Pods-iOS-Hue.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-Hue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-Hue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14B804AB1BD7983E00C32C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E2A6C59E60199B16BB6E48 /* Pods-iOS-Hue.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-Hue/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-Hue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14B804AD1BD7983E00C32C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-HueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Hue.app/iOS-Hue";
+			};
+			name = Debug;
+		};
+		14B804AE1BD7983E00C32C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iOS-HueTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-HueTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Hue.app/iOS-Hue";
+			};
+			name = Release;
+		};
+		14B804B01BD7983E00C32C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iOS-HueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-HueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS-Hue";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		14B804B11BD7983E00C32C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iOS-HueUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.reupload.iOS-HueUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS-Hue";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B804791BD7983D00C32C58 /* Build configuration list for PBXProject "iOS-Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B804A71BD7983E00C32C58 /* Debug */,
+				14B804A81BD7983E00C32C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B804A91BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B804AA1BD7983E00C32C58 /* Debug */,
+				14B804AB1BD7983E00C32C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B804AC1BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-HueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B804AD1BD7983E00C32C58 /* Debug */,
+				14B804AE1BD7983E00C32C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B804AF1BD7983E00C32C58 /* Build configuration list for PBXNativeTarget "iOS-HueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B804B01BD7983E00C32C58 /* Debug */,
+				14B804B11BD7983E00C32C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14B804881BD7983D00C32C58 /* iOS_Hue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14B804891BD7983D00C32C58 /* iOS_Hue.xcdatamodel */,
+			);
+			currentVersion = 14B804891BD7983D00C32C58 /* iOS_Hue.xcdatamodel */;
+			path = iOS_Hue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 14B804761BD7983D00C32C58 /* Project object */;
+}
